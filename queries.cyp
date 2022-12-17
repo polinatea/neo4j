@@ -57,3 +57,12 @@ create (:organization{name: 'Школа №38', class:'Образование'})
 match (a:bus_station), (b:bus_station)
 where a.name = 'Ватутина' AND b.name = 'Зелёная'
 create (a)-[r:path {route: "1", number:1, distance:7}]->(b)
+
+#	creating connection between bus stop and organizations
+match (a:Stop), (b:Organisation)
+where a.title = 'Ватутина' AND b.title = 'Дежавю'
+create (a)<-[r:nextTo]-(b)
+
+# there was more queries creating path between stops and
+# between stops and organizations but they all work the same, 
+# so i didn't put them in this file
