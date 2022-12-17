@@ -24,4 +24,6 @@ Find all routes that are longer than 10 km.
 <b>Result </b>
 ![image](https://user-images.githubusercontent.com/67418401/208235688-350b47ad-f35b-41d7-b2b4-aa92e713e343.png)
 
+*photo doesn't have organizations because assignments were done with online neo4j sandbox and it only keeps data for 3 days, and I didn't take photo of a final result....
+
 
